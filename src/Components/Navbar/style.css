@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 .navbar {
-  padding: 2vh 5vw;
+  padding: 3.5vh 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+  border-left: 0.5vw solid #f9ca24;
+  border-right: 0.5vw solid #f9ca24;
 }
 
 .navbar ul li {
@@ -18,14 +22,26 @@
 .navbar ul li a {
   text-decoration: none;
   color: #000;
+  transition: 0.5s color ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #f9ca24;
 }
 
 .navbar .title{
   font-weight: 600;
-  font-size: 18px;
+  font-size: 30px;
+  font-family: 'Kaushan Script', cursive;
 }
 
 @media (max-width: 576px) {
+  .navbar{
+  padding: 2vh 5vw;
+    border-left: 1.5vw solid #f9ca24;
+    border-right: 1.5vw solid #f9ca24;
+  }
+
   .navbar > .title {
     display: none;
   }

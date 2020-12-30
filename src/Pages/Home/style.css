@@ -1,4 +1,32 @@
-.home > .scrollableHome{
-    overflow-y: scroll;
-    height: 91vh;
+.home > .scrollableHome {
+  overflow-y: scroll;
+  height: 87vh;
+}
+
+.home > .scrollableHome > h2 {
+  padding: 3.5vh 5vw 0 5vw;
+}
+
+.home > .scrollableHome > .topSales {
+  width: 89vw;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.home > .scrollableHome > .topSales > div {
+  min-width: 18vw;
+  margin-right: 30px;
+}
+
+@media (max-width: 576px) {
+  .home > .scrollableHome > .topSales {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home > .scrollableHome > .topSales > div {
+    min-width: 80vw;
+    margin: 30px auto 10px auto;
+  }
 }
