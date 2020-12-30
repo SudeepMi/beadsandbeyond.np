@@ -1,0 +1,32 @@
+.navbar {
+  padding: 2vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .title{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .navbar > .title {
+    display: none;
+  }
+}

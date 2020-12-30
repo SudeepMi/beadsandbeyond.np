@@ -1,0 +1,28 @@
+.landing > .landing-tiny {
+  background: url("../../../Assets/landing-tiny.webp") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 45vh;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.landing > .landing-full {
+  background: url("../../../Assets/landing.webp") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 45vh;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .landing > .landing-tiny {
+    background: url("../../../Assets/landing-sm.webp") no-repeat;
+  }
+  .landing > .landing-full {
+    background: url("../../../Assets/landing-sm.jpg") no-repeat;
+  }
+}
