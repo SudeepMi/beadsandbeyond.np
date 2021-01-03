@@ -3,8 +3,8 @@
   height: 87vh;
 }
 
-.home > .scrollableHome > h2 {
-  padding: 3.5vh 5vw 0 5vw;
+.home > .scrollableHome > h3 {
+  padding: 3.5vh 9vw 0 9vw;
 }
 
 .home > .scrollableHome > .topSales {
@@ -12,10 +12,31 @@
   padding: 0 5vw;
   display: flex;
   align-items: center;
-  overflow-x: scroll;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
 .home > .scrollableHome > .topSales > div {
+  min-width: 18vw;
+  margin-right: 30px;
+}
+
+.home hr {
+  background: #f9ca24;
+}
+
+.home > .scrollableHome > .recentItems {
+  width: 89vw;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.home > .scrollableHome > .recentItems > div {
   min-width: 18vw;
   margin-right: 30px;
 }
@@ -25,7 +46,18 @@
     flex-direction: column;
     justify-content: center;
   }
+
   .home > .scrollableHome > .topSales > div {
+    min-width: 80vw;
+    margin: 30px auto 10px auto;
+  }
+
+  .home > .scrollableHome > .recentItems {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home > .scrollableHome > .recentItems > div {
     min-width: 80vw;
     margin: 30px auto 10px auto;
   }

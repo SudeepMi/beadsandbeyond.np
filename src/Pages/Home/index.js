@@ -26,15 +26,17 @@ const index = () => {
         </Suspense>
 
         {/* 3. Top Sales */}
-        <h2>Top Sales</h2>
+        <h3 style={{fontWeight: "700"}}>TOP SALES</h3>
         <div className="topSales">
           {topSales.map((item, index) => (
             <ProductCard key={index} productInfo={item} />
           ))}
         </div>
 
+        <hr />
+
         {/* 4. Recent Items */}
-        <h2>Recent Items</h2>
+        <h3 style={{fontWeight: "700"}}>RECENT ITEMS</h3>
         <div className="recentItems">
           {topSales.map((item, index) => (
             <ProductCard key={index} productInfo={item} />

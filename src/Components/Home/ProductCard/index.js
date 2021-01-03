@@ -25,8 +25,9 @@ const index = ({ productInfo }) => {
       <div className="content">
         <h3>{productName}</h3>
         <p>{productDescription}</p>
+        <hr/>
         <div>
-          <h4>$ {productPrice}</h4>
+          <h4>Price ${productPrice}</h4>
           <Button>Add To Cart</Button>
         </div>
       </div>

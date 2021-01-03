@@ -1,18 +1,25 @@
 .productCard {
-  max-width: 20vw;
-  margin: 5vh 0;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(219, 246, 255, 0.3);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(219, 246, 255, 0.3);
-  box-shadow: 10px 10px 5px 0px rgba(219, 246, 255, 0.3);
+  max-width: 17vw;
+  margin: 5vh 0 2vh 0;
+  -webkit-box-shadow: 8px 10px 24px 5px rgba(219, 237, 255, 0.6);
+  -moz-box-shadow: 8px 10px 24px 5px rgba(219, 237, 255, 0.6);
+  box-shadow: 8px 10px 24px 5px rgba(219, 237, 255, 0.6);
+  border-radius: 12px;
 }
 
-.productCard > .content{
-    padding: 10px;
+.productCard > .content {
+  padding: 15px 20px;
+  line-height: 1.5;
 }
 
-.productCard > .content > div{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.productCard > .content > div {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productCard > .content .MuiButton-root {
+  background: #f9ca24;
+  color: #fff;
 }
