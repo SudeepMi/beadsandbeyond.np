@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.navbar {
+  padding: 3.5vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  border-left: 0.5vw solid #f9ca24;
+  border-right: 0.5vw solid #f9ca24;
+  -webkit-box-shadow: 8px 10px 24px 5px rgba(219, 237, 255, 0.6);
+  -moz-box-shadow: 8px 10px 24px 5px rgba(219, 237, 255, 0.6);
+  box-shadow: 8px 10px 24px 5px rgba(219, 237, 255, 0.6);
+  font-weight: 600;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s color ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #f9ca24;
+}
+
+.navbar .title{
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+@media (max-width: 576px) {
+  .navbar{
+  padding: 2vh 5vw;
+    border-left: 1.5vw solid #f9ca24;
+    border-right: 1.5vw solid #f9ca24;
+  }
+
+  .navbar > .title {
+    display: none;
+  }
+}

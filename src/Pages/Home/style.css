@@ -1,0 +1,74 @@
+.home > .scrollableHome {
+  overflow-y: scroll;
+  height: 87vh;
+}
+
+.home > .scrollableHome > h3 {
+  padding: 3.5vh 9vw 0 9vw;
+}
+
+.home > .scrollableHome > .topSales {
+  width: 89vw;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.home > .scrollableHome > .topSales > div {
+  min-width: 18vw;
+  margin-right: 30px;
+}
+
+.home hr {
+  border: none;
+  border-top: 2px solid #f9ca24;
+}
+
+.home > .scrollableHome > .recentItems {
+  width: 89vw;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.home > .scrollableHome > .recentItems > div {
+  min-width: 18vw;
+  margin-right: 30px;
+}
+
+.home > .scrollableHome > .homeAd {
+  background: url('https://images.unsplash.com/photo-1477251107047-61bd80732715?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80') no-repeat;
+  background-size: cover;
+  height: 20vh;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .home > .scrollableHome > .topSales {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home > .scrollableHome > .topSales > div {
+    min-width: 80vw;
+    margin: 30px auto 10px auto;
+  }
+
+  .home > .scrollableHome > .recentItems {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home > .scrollableHome > .recentItems > div {
+    min-width: 80vw;
+    margin: 30px auto 10px auto;
+  }
+}
